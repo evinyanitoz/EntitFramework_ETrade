@@ -13,5 +13,6 @@ namespace EntitFramework_ETrade
 
         public DbSet<Product> Products { get; set; }
 
+
     }
 }

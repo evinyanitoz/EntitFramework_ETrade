@@ -63,6 +63,7 @@
             this.btnSil.TabIndex = 7;
             this.btnSil.Text = "SİL";
             this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // tbxUnitPriceUpdate
             // 
@@ -118,7 +119,7 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox2.Location = new System.Drawing.Point(438, 307);
+            this.groupBox2.Location = new System.Drawing.Point(396, 416);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(346, 254);
             this.groupBox2.TabIndex = 7;
@@ -135,6 +136,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "GÜNCELLE";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label5
             // 
@@ -171,6 +173,7 @@
             this.btnEkle.TabIndex = 6;
             this.btnEkle.Text = "EKLE";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // txtFiyat
             // 
@@ -225,7 +228,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox1.Location = new System.Drawing.Point(35, 299);
+            this.groupBox1.Location = new System.Drawing.Point(25, 416);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(330, 254);
             this.groupBox1.TabIndex = 5;
@@ -248,7 +251,6 @@
             this.dgwProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgwProducts.BackgroundColor = System.Drawing.Color.PaleTurquoise;
             this.dgwProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwProducts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgwProducts.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.dgwProducts.ImeMode = System.Windows.Forms.ImeMode.KatakanaHalf;
             this.dgwProducts.Location = new System.Drawing.Point(0, 0);
@@ -256,17 +258,18 @@
             this.dgwProducts.RowHeadersWidth = 51;
             this.dgwProducts.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Teal;
             this.dgwProducts.RowTemplate.Height = 24;
-            this.dgwProducts.Size = new System.Drawing.Size(821, 573);
+            this.dgwProducts.Size = new System.Drawing.Size(797, 374);
             this.dgwProducts.TabIndex = 4;
+            this.dgwProducts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwProducts_CellClick);
             this.dgwProducts.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwProducts_CellContentClick);
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.Color.Teal;
-            this.button3.Location = new System.Drawing.Point(12, 265);
+            this.button3.Location = new System.Drawing.Point(0, 370);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(797, 28);
+            this.button3.Size = new System.Drawing.Size(797, 40);
             this.button3.TabIndex = 8;
             this.button3.Text = "ENTİTY FRAMEWORK  İLE YAPILAN";
             this.button3.UseVisualStyleBackColor = true;
@@ -276,7 +279,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(821, 573);
+            this.ClientSize = new System.Drawing.Size(801, 697);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.button1);
